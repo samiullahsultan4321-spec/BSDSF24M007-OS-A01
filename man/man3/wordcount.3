@@ -1,0 +1,20 @@
+.TH WORDCOUNT 3
+.SH NAME
+wordCount \- Count chars, words etc in file.
+
+.SH SYNOPSIS
+.B int wordCount(FILE* file, int* lines, int* words, int* chars); 
+
+.SH DESCRIPTION
+The wordcount() Count the number of lines, words and characters in the passed file. 
+
+
+.SH RETURN VALUE
+Return 0 on success and -1 on failure. 
+
+.SH EXAMPLE
+.B int result = wordcount(file, lines, words, chars);
+
+.SH AUTHOR
+.B SAMI ULLAH
+sami1234@gmail.com

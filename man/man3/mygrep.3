@@ -1,0 +1,20 @@
+.TH MYGREP 3
+.SH NAME
+mygrep \- Search lines containing search_str in a file, and fills the matches array.
+
+
+.SH SYNOPSIS
+.B int mygrep(FILE* fp, const char* search_str, char*** matches); 
+.SH DESCRIPTION
+Search lines containing search_str in a file, and fills the matches array.
+
+
+.SH RETURN VALUE
+Return 0 on success and -1 on failure. 
+
+.SH EXAMPLE
+.B int result =mygrep(file,_str, matches); 
+
+.SH AUTHOR
+.B SAMI ULLAH
+sami1234@gmail.com
