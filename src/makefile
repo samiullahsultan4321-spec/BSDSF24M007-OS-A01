@@ -10,20 +10,17 @@ $(TARGET): main.o $(LIBRARY)
 	mkdir -p ../bin
 	$(CC) $(CFLAGS) main.o $(LIBRARY) -o $(TARGET)
 
-<<<<<<< HEAD
+
 $(LIBRARY): mystrfunctions.o myfilefunctions.o
-=======
+
 $(LIBRARY): mystrfunctions.c myfilefunctions.c
->>>>>>> man-pages
+
 	mkdir -p ../lib
 	$(CC) -fPIC --shared -o $(LIBRARY) mystrfunctions.c myfilefunctions.c
 main.o: main.c ../include/mystrfunctions.h ../include/myfilefunctions.h
 	$(CC) $(CFLAGS) $(INCLUDE) -c main.c 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> man-pages
 .PHONY: all clean
 clean:
 	rm -f *.o $(TARGET) $(LIBRARY)
